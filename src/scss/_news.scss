@@ -1,0 +1,150 @@
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 55px;
+    margin: 0 auto;
+    margin-top: 50px;
+    @media screen and (max-width:767px ){
+        margin-bottom: 25px;
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+}
+.news_title{
+    font-size: 48px;
+    color: #303030;
+    font-family: "Raleway";
+    text-align: center;
+    margin-bottom: 27px;
+    margin-top: 0;
+    @media screen and (max-width:767px ){
+        font-size: 40px;
+    }
+    @media screen and (max-width:768px ){
+        font-size: 37px;
+    }
+}
+
+.news_text{
+    font-size: 18px;
+    color: #303030;
+    font-family: "Ralewaylight";
+    text-align: center;
+    margin-bottom: 35px;
+    max-width: 553px;
+    @media screen and (max-width:767px ){
+        font-size: 16px;
+    }
+}
+
+.news_email{
+    overflow: hidden;
+    border-radius: 35px;
+    margin: 0 auto;
+    display: flex;
+    
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 34px;
+        top: 53%;
+        transform: translateY(-50%);
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: url('../img/mail.png') center center no-repeat;
+        background-size: contain;
+    }
+}
+
+.news__input {
+    padding: 29px 29px 23px 67px;
+    background-color: #ffffff;
+    display: flex;
+    border: none;
+    min-width: 436px;
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            font-size: 14px;
+            color: #979797;
+            font-family: "Ralewaylight";
+            font-style: italic;
+            text-align: left;
+        }
+          &:-moz-placeholder { /* Firefox 19+ */
+            font-size: 14px;
+            color: #979797;
+            font-family: "Ralewaylight";
+            font-style: italic;
+            text-align: left;
+        }
+          &:-ms-input-placeholder { /* IE 10+ */
+            font-size: 14px;
+            color: #979797;
+            font-family: "Ralewaylight";
+            font-style: italic;
+            text-align: left;
+        }
+          &:-moz-placeholder { /* Firefox 18- */
+            font-size: 14px;
+            color: #979797;
+            font-family: "Ralewaylight";
+            font-style: italic;
+            text-align: left;
+        }
+        @media screen and (max-width:767px ){
+            padding: 20px 15px 20px 25px;
+        }
+        @media screen and (max-width:768px ){
+            padding: 29px 170px 23px 67px;
+        }
+
+        &:focus {
+            outline: none;
+        }
+}
+
+
+
+.news_submit{
+    background-color: #e10011;
+    padding: 26px 71px 26px 44px ;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Raleway";
+    text-align: center;
+    border: none;
+    transition: color .3s ;
+    cursor: pointer;
+    span {
+        position: relative;
+
+        &:before{
+            content: '';
+            position: absolute;
+            top: 55%;
+            right: -12px;
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-left: 7px solid #fff;
+            border-bottom: 7px solid transparent;
+            transform: translateY(-50%);
+            transition: right .3s ;
+        }
+    }
+    
+    &:hover {
+        color: rgba(255, 255, 255, 0.5);
+        span:before {
+            right: -15px;
+        }
+    }
+
+
+    @media screen and (max-width:767px ){
+        padding: 20px 10px 20px 15px;
+    }
+}

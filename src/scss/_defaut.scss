@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(238,238,238);
+}
+
+.text-center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+a {
+    transition: .3s opacity ease-in-out;
+    cursor: pointer;
+
+        &:hover {
+            opacity: 0.5;
+        }
+}

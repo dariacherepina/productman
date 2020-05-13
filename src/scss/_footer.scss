@@ -1,0 +1,47 @@
+.social{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 65px;
+    align-items: center;
+    margin: auto;
+    @media screen and (max-width:767px ){
+        margin-top: 25px;
+        padding-top: 15px;
+        padding-bottom: 50px;
+    }
+}
+
+
+.social_net{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 71px;
+    height: 71px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 19px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+    @media screen and (max-width:767px ){
+        width: 60px;
+        height: 60px;
+
+    }
+}
+
+.subscript{
+    font-size: 18px;
+    color: #979797;
+    font-family: "Ralewaylight";
+    text-align: center;
+    @media screen and (max-width:767px ){
+        font-size: 13px;
+    }
+}
+.colortext{
+    color: #000;
+}
